@@ -1,0 +1,75 @@
+# Thread-assisted-Port-scanner-777
+
+Python Port Scanner
+
+A simple and lightweight TCP Port Scanner written in Python. This tool allows users to scan specified ports on a target IP address or hostname and identify whether they are open or closed.
+
+Features
+TCP Port Scanning: Checks the connection status of specified TCP ports.
+Custom Port Selection: Scan individual ports or multiple ports (e.g. 80,443,22).
+Service Response Detection: Attempts to retrieve service response data from open ports.
+Timeout Support: Uses a 1-second connection timeout.
+Thread Support: Uses Python's ThreadPoolExecutor.
+Colored Terminal Output: Provides a simple and readable terminal interface.
+Error Handling: Handles invalid ports, hostnames, timeouts, and keyboard interruptions.
+Requirements
+Python 3.x
+No external libraries required.
+Installation
+
+Clone the repository:
+
+bash
+git clone https://github.com/YOUR_USERNAME/python-port-scanner.git
+
+
+Navigate to the project directory:
+
+bash
+cd python-port-scanner
+
+Usage
+
+Run the script:
+
+bash
+python portscanner.py
+
+
+Enter the target IP address or hostname:
+
+text
+[?] Please enter target IP : 127.0.0.1
+
+
+Enter the ports you want to scan:
+
+text
+[?] Please enter your ports (EX: 80,443,22) : 80,443,22,8080
+
+Example Output
+text
+7777777777777777
+|Status Port Service:
+|[OPEN] 80
+7777777777777777
+
+7777777777777777
+|Status Port Service:
+|[CLOSED] 443
+7777777777777777
+
+Technologies Used
+Python
+Socket
+Concurrent Futures
+TCP Networking
+Disclaimer
+
+This tool is developed for educational purposes and authorized network testing only.
+
+Only scan systems and networks that you own or have explicit permission to test. Unauthorized port scanning may violate applicable laws or network policies.
+
+Author
+
+777 or beratlovesjava
